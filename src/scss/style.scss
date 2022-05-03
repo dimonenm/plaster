@@ -31,7 +31,6 @@
   line-height: 140%;
   letter-spacing: 0.02em;
   text-decoration-line: underline;
-
   color: #2da6dd;
 }
 
@@ -607,12 +606,63 @@
         &-img1 {
           height: 100px;
           width: 100px;
-          background-image: url('../img/small_img1.jpg');
+          background-image: url("../img/small_img1.jpg");
         }
         &-img2 {
           height: 100px;
           width: 100px;
-          background-image: url('../img/small_img2.jpg');
+          background-image: url("../img/small_img2.jpg");
+        }
+      }
+    }
+  }
+  .consultations {
+    display: grid;
+    justify-content: center;
+
+    margin-top: 140px;
+
+    width: 100%;
+
+    background-color: #e7f2f9;
+    .side-wrapper {
+      display: grid;
+      gap: 40px;
+      grid-template-columns: 560px 560px;
+
+      width: 1160px;
+
+      .left_side {
+        &-text_big {
+          @include big_text();
+        }
+        &-text_small {
+          @include small_text();
+          margin-top: 20px;
+        }
+      }
+      .right_side {
+        input {
+          width: 560px;
+          height: 60px;
+
+          padding: 0 20px;
+
+          background: rgba(37, 65, 82, 0.2);
+          border-radius: 10px;
+          border: 0;
+
+          font-family: "Montserrat-Regular";
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 140%;
+
+          letter-spacing: 0.02em;
+
+          color: rgba(37, 65, 82, 0.65);
+        }
+        input:nth(n+1){
+          margin-top: 20px;
         }
       }
     }

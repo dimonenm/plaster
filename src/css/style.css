@@ -732,3 +732,62 @@
   width: 100px;
   background-image: url("../img/small_img2.jpg");
 }
+
+.container .consultations {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 140px;
+  width: 100%;
+  background-color: #e7f2f9;
+}
+
+.container .consultations .side-wrapper {
+  display: -ms-grid;
+  display: grid;
+  gap: 40px;
+  -ms-grid-columns: 560px 560px;
+      grid-template-columns: 560px 560px;
+  width: 1160px;
+}
+
+.container .consultations .side-wrapper .left_side-text_big {
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 118%;
+  text-transform: uppercase;
+  color: #254152;
+}
+
+.container .consultations .side-wrapper .left_side-text_small {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #254152;
+  margin-top: 20px;
+}
+
+.container .consultations .side-wrapper .right_side input {
+  width: 560px;
+  height: 60px;
+  padding: 0 20px;
+  background: rgba(37, 65, 82, 0.2);
+  border-radius: 10px;
+  border: 0;
+  font-family: "Montserrat-Regular";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: rgba(37, 65, 82, 0.65);
+}
+
+.container .consultations .side-wrapper .right_side input:nth(n+1) {
+  margin-top: 20px;
+}
