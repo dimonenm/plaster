@@ -620,7 +620,7 @@
     display: grid;
     justify-content: center;
 
-    margin-top: 140px;
+    padding: 100px 0;
 
     width: 100%;
 
@@ -642,6 +642,9 @@
         }
       }
       .right_side {
+        display: grid;
+        grid-template-rows: 60px 80px;
+
         input {
           width: 560px;
           height: 60px;
@@ -661,8 +664,196 @@
 
           color: rgba(37, 65, 82, 0.65);
         }
-        input:nth(n+1){
+        input:nth-child(2) {
           margin-top: 20px;
+        }
+        .button_send {
+          display: grid;
+          justify-content: center;
+          align-items: center;
+
+          height: 60px;
+          width: 190px;
+
+          margin-top: 40px;
+
+          background-color: #254152;
+          border-radius: 999px;
+
+          font-family: "Montserrat-Regular";
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 120%;
+          color: #ffffff;
+        }
+        .processing_personal_data {
+          margin-top: 20px;
+
+          font-family: "Montserrat-Regular";
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 140%;
+          letter-spacing: 0.02em;
+          color: rgba(37, 65, 82, 0.65);
+
+          span {
+            color: #254152;
+          }
+        }
+      }
+    }
+  }
+  .used_materials {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    padding: 100px 0;
+
+    .title {
+      width: 1160px;
+
+      &-text_big {
+        @include big_text();
+      }
+      &-text_small {
+        @include small_text();
+        margin-top: 20px;
+      }
+    }
+    .used_materials-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      width: 1160px;
+
+      margin-top: 80px;
+      .card {
+        height: 525px;
+        width: 260px;
+
+        padding: 40px 20px;
+
+        box-shadow: 0px 0px 15px rgba(37, 65, 82, 0.2);
+        border-radius: 10px;
+
+        color: #254152;
+
+        &-img {
+          height: 220px;
+          width: 220px;
+          background-image: url("../img/card-img.png");
+        }
+        &-title {
+          margin-top: 40px;
+
+          font-family: "Montserrat-SemiBold";
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 140%;
+          letter-spacing: 0.02em;
+        }
+        &-text {
+          margin-top: 20px;
+
+          font-family: "Montserrat-Regular";
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 140%;
+          letter-spacing: 0.02em;
+        }
+        &-link {
+          @include link_text;
+
+          margin-top: 40px;
+        }
+      }
+    }
+    .used_materials-pag {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      align-items: center;
+
+      height: 30px;
+      width: 160px;
+
+      margin-top: 50px;
+
+      .left_arrow {
+        height: 30px;
+        width: 11px;
+        background-image: url("../img/left_arrow.svg");
+      }
+      .dot {
+        height: 8px;
+        width: 8px;
+        background-image: url("../img/dot.svg");
+      }
+      .dot_active {
+        height: 8px;
+        width: 8px;
+        background-image: url("../img/dot_active.svg");
+      }
+      .right_arrow {
+        height: 30px;
+        width: 11px;
+        background-image: url("../img/right_arrow.svg");
+      }
+    }
+  }
+  .machine_plastering {
+    display: grid;
+    justify-content: center;
+
+    padding: 100px 0;
+
+    width: 100%;
+
+    background-color: #e7f2f9;
+
+    .title {
+      width: 1160px;
+
+      &-text_big {
+        @include big_text();
+      }
+      &-text_small {
+        @include small_text();
+        margin-top: 20px;
+      }
+    }
+    &-cards {
+      width: 1160px;
+
+      .card {
+        width: 260px;
+
+        &-number {
+          display: grid;
+          justify-content: center;
+          align-items: center;
+
+          position: absolute;
+
+          height: 40px;
+          width: 40px;
+
+          background: #ffffff;
+          border: 4px solid #2da6dd;
+          border-radius: 999px;
+
+          font-family: "Montserrat-SemiBold";
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 75%;
+          text-align: center;
+          letter-spacing: 0.02em;
+        }
+        &-img {
+          height: 260px;
+          width: 260px;
+        }
+        &-text {
         }
       }
     }

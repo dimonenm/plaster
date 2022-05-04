@@ -739,7 +739,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 140px;
+  padding: 100px 0;
   width: 100%;
   background-color: #e7f2f9;
 }
@@ -773,6 +773,13 @@
   margin-top: 20px;
 }
 
+.container .consultations .side-wrapper .right_side {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 60px 80px;
+      grid-template-rows: 60px 80px;
+}
+
 .container .consultations .side-wrapper .right_side input {
   width: 560px;
   height: 60px;
@@ -788,6 +795,238 @@
   color: rgba(37, 65, 82, 0.65);
 }
 
-.container .consultations .side-wrapper .right_side input:nth(n+1) {
+.container .consultations .side-wrapper .right_side input:nth-child(2) {
   margin-top: 20px;
+}
+
+.container .consultations .side-wrapper .right_side .button_send {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  width: 190px;
+  margin-top: 40px;
+  background-color: #254152;
+  border-radius: 999px;
+  font-family: "Montserrat-Regular";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.container .consultations .side-wrapper .right_side .processing_personal_data {
+  margin-top: 20px;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: rgba(37, 65, 82, 0.65);
+}
+
+.container .consultations .side-wrapper .right_side .processing_personal_data span {
+  color: #254152;
+}
+
+.container .used_materials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 100px 0;
+}
+
+.container .used_materials .title {
+  width: 1160px;
+}
+
+.container .used_materials .title-text_big {
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 118%;
+  text-transform: uppercase;
+  color: #254152;
+}
+
+.container .used_materials .title-text_small {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #254152;
+  margin-top: 20px;
+}
+
+.container .used_materials .used_materials-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  width: 1160px;
+  margin-top: 80px;
+}
+
+.container .used_materials .used_materials-cards .card {
+  height: 525px;
+  width: 260px;
+  padding: 40px 20px;
+  -webkit-box-shadow: 0px 0px 15px rgba(37, 65, 82, 0.2);
+          box-shadow: 0px 0px 15px rgba(37, 65, 82, 0.2);
+  border-radius: 10px;
+  color: #254152;
+}
+
+.container .used_materials .used_materials-cards .card-img {
+  height: 220px;
+  width: 220px;
+  background-image: url("../img/card-img.png");
+}
+
+.container .used_materials .used_materials-cards .card-title {
+  margin-top: 40px;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+}
+
+.container .used_materials .used_materials-cards .card-text {
+  margin-top: 20px;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+}
+
+.container .used_materials .used_materials-cards .card-link {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #2da6dd;
+  margin-top: 40px;
+}
+
+.container .used_materials .used_materials-pag {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  width: 160px;
+  margin-top: 50px;
+}
+
+.container .used_materials .used_materials-pag .left_arrow {
+  height: 30px;
+  width: 11px;
+  background-image: url("../img/left_arrow.svg");
+}
+
+.container .used_materials .used_materials-pag .dot {
+  height: 8px;
+  width: 8px;
+  background-image: url("../img/dot.svg");
+}
+
+.container .used_materials .used_materials-pag .dot_active {
+  height: 8px;
+  width: 8px;
+  background-image: url("../img/dot_active.svg");
+}
+
+.container .used_materials .used_materials-pag .right_arrow {
+  height: 30px;
+  width: 11px;
+  background-image: url("../img/right_arrow.svg");
+}
+
+.container .machine_plastering {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px 0;
+  width: 100%;
+  background-color: #e7f2f9;
+}
+
+.container .machine_plastering .title {
+  width: 1160px;
+}
+
+.container .machine_plastering .title-text_big {
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 118%;
+  text-transform: uppercase;
+  color: #254152;
+}
+
+.container .machine_plastering .title-text_small {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #254152;
+  margin-top: 20px;
+}
+
+.container .machine_plastering-cards {
+  width: 1160px;
+}
+
+.container .machine_plastering-cards .card {
+  width: 260px;
+}
+
+.container .machine_plastering-cards .card-number {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: #ffffff;
+  border: 4px solid #2da6dd;
+  border-radius: 999px;
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 75%;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.container .machine_plastering-cards .card-img {
+  height: 260px;
+  width: 260px;
 }
